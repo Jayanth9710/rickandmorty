@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+.characters-container{
+   font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 16px;
+  gap: 10px;
+  background-image: linear-gradient(to right top, #12cfeb, #24a5c8, #2f7ca0, #2f5676, #25344b);
+  width:350px;
+  display:flex;
+}
+
+.dp{
+  height: 150px;
+  border-radius: 50%;
+}
+body{
+   display: grid;
+  height: 100vh;
+  place-items: center;
+  background-color: #24282f;
+ 
+}
+
+.character-name:hover{
+  color:yellow;
+}
+.status:hover{
+  color:yellow;
+}
+.gender:hover{
+  color: yellow;
+}
+
+.characters-container:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.header{
+  font-family: 'Creepster', cursive;
+  display: block;
+  margin-bottom: 12px;
+  color: #5afc03;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+@media (min-width:1200px) and (max-width:1600px){
+  .characters-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:25px;
+  }
+}
+@media (min-width:900px) and (max-width:1200px){
+  .characters-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap:20px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px){
+.characters-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:10px;
+}
+}
+
+.page-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin: 20px 5px 20px 5px;
+  background-image: linear-gradient(to top, #156abe, #1a70c1, #2176c4, #277cc7, #2e82ca);
+  font-family: 'Otomanopee One', sans-serif;
+}
+
+.page-button:hover{
+  background-image: linear-gradient(to top, #6baae9, #9598e4, #be83ce, #db6da7, #e46077);
+}
+
